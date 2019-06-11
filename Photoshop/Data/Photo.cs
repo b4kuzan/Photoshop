@@ -1,4 +1,3 @@
-using Photoshop;
 
 namespace Photoshop
 {

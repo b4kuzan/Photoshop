@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Photoshop
 {
-    public class GrayScaleFilter : PixelFilter
+    public class GrayScaleFilter : PixelFilter<EmptyParameters>
     {
-        public GrayScaleFilter() : base(new EmptyParameters()) { }
-
-        public override Pixel ProcessPixel(Pixel original, IParameters parameters)
+        public override Pixel ProcessPixel(Pixel original, EmptyParameters parameters)
         {
             return GetGrayScale(original);
         }
